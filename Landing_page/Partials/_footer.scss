@@ -1,0 +1,100 @@
+footer {
+  background: $primary-color;
+
+  .footer__container {
+    margin-top: 7rem;
+    padding: 4rem;
+
+    h3 {
+      text-align: center;
+    }
+
+    .footer__section {
+      margin-top: 2rem;
+      display: flex;
+      justify-content: space-evenly;
+
+      .footer-left {
+        .footer_img {
+          width: 15.3rem;
+          height: 285px;
+        }
+
+        .contact {
+          margin: 5px;
+          text-align: center;
+
+          img {
+            position: relative;
+            top: 3px;
+            width: 20px;
+            height: 20px;
+          }
+        }
+      }
+
+      .line {
+        position: absolute;
+        border-left: 1px solid #fff;
+        height: 27rem;
+      }
+
+      .footer-right {
+        position: relative;
+        left: 2rem;
+
+        input,
+        textarea {
+          width: 19.6rem;
+          background: $primary-color;
+          color: $text-color1;
+          border-radius: 10px;
+          border: 1.5px solid #fff;
+          margin-bottom: 10px;
+          padding: 1rem;
+        }
+
+        input {
+          height: 2rem;
+        }
+
+        .light {
+          background: #d9d9d9;
+          color: $primary-color;
+          font-size: 14px;
+          padding: 6px;
+          font-weight: 400;
+          width: 79px;
+          height: 28px;
+        }
+      }
+    }
+
+    .links {
+      margin-top: 5rem;
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 3rem;
+
+      a {
+        color: $text-color1;
+        transition: all 400ms ease;
+        font-size: 13px;
+
+        &:hover {
+          color: rgb(74, 72, 72);
+        }
+      }
+
+      article {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+
+        h4 {
+          margin-bottom: 2rem;
+        }
+      }
+    }
+  }
+}

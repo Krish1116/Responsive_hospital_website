@@ -1,0 +1,146 @@
+.section-conteiner {
+  background: $primary-color;
+  display: flex;
+
+  .left-section {
+    margin-top: 7.5rem;
+    margin-left: 3.7rem;
+
+    img {
+      width: 27.8rem;
+      height: 27.8rem;
+    }
+  }
+
+  .rigth-section {
+    margin-top: 3.5rem;
+    margin-right: 8rem;
+
+    span {
+      color: $text-color2;
+      font-family: "Alike Angular", sans-serif;
+      font-size: 24px;
+      font-style: normal;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 1.68px;
+    }
+
+    .qut1 {
+      margin-top: 6rem;
+      height: 1.5rem;
+      margin-left: -1rem;
+    }
+
+    .para {
+      margin-top: -1rem;
+      margin-left: 1rem;
+      color: $text-color2;
+      text-align: center;
+      font-family: Inter, sans-serif;
+      font-size: 1rem;
+      font-weight: 400;
+      letter-spacing: 1.05px;
+    }
+
+    .qut2 {
+      position: relative;
+      right: 1.3rem;
+      bottom: 0.9rem;
+      margin-left: 43.5rem;
+      height: 1.5rem;
+    }
+  }
+}
+
+// =====================MEDIA QUERIES(MEDIUM DEVICE)=========================
+@media screen and (max-width: 1024px) {
+  .section-conteiner {
+    .left-section {
+      margin-top: 6.5rem;
+      margin-left: 0rem;
+
+      img {
+        width: 25.8rem;
+        height: 27.8rem;
+      }
+    }
+
+    .rigth-section {
+      span {
+        font-size: 30px;
+      }
+
+      .para {
+        margin-top: -4.1rem;
+        margin-left: 0rem;
+        font-size: 1.2rem;
+        line-height: 25px;
+      }
+
+      .qut1 {
+        position: relative;
+        top: -3rem;
+        right: 0.7rem;
+        margin-top: 5rem;
+        height: 1.2rem;
+      }
+
+      .qut2 {
+        height: 1.2rem;
+        position: relative;
+        left: 1.2rem;
+        margin-left: 20.5rem;
+      }
+    }
+  }
+}
+
+// =====================MEDIA QUERIES(SMALL DEVICE)=========================
+@media screen and (max-width: 600px) {
+  .section-conteiner {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+
+    .left-section {
+      margin-top: 1.5rem;
+      margin-left: 5rem;
+
+      img {
+        width: 24.8rem;
+        height: 24.8rem;
+      }
+    }
+
+    .rigth-section {
+      margin-top: 1.5rem;
+      margin-right: 0rem;
+
+      span {
+        font-size: 25px;
+        display: flex;
+        justify-content: center;
+      }
+
+      .para {
+        font-size: 0.9rem;
+      }
+
+      .qut1 {
+        position: relative;
+        top: -3rem;
+        right: -1rem;
+        height: 0.8rem;
+      }
+
+      .qut2 {
+        height: 0.8rem;
+        position: relative;
+        bottom: 25px;
+        left: 14.5rem;
+        margin-left: 20.5rem;
+      }
+    }
+  }
+}

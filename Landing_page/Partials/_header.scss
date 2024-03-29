@@ -1,0 +1,154 @@
+header {
+  height: 65vh;
+  display: grid;
+  place-items: center;
+  overflow: hidden;
+
+  .container {
+    margin-top: 10rem;
+    display: grid;
+    grid-template-columns: 46% 46%;
+    align-items: center;
+    gap: 8%;
+    justify-content: space-between;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 30%;
+      left: 17%;
+      transform: translate(-50%, -50%);
+      width: 90px;
+      height: 90px;
+      background: rgba(113, 196, 145, 61%);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 26%;
+      left: 20.6%;
+      transform: translate(-50%, -50%);
+      width: 20px;
+      height: 20px;
+      background: rgba(113, 196, 145, 61%);
+      border-radius: 50%;
+      z-index: -1;
+    }
+
+    .left-side {
+      color: $primary-color;
+      width: 135%;
+      display: grid;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      right: 20rem;
+
+      &::before {
+        content: "";
+        position: absolute;
+        bottom: 139%;
+        left: 22.6%;
+        transform: translate(-50%, -50%);
+        width: 50px;
+        height: 50px;
+        background: rgba(113, 196, 145, 61%);
+        border-radius: 50%;
+        z-index: -1;
+      }
+
+      h1 {
+        font-family: "Alike Angular";
+        font-size: 64px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+
+      p {
+        font-family: Inter;
+        font-size: 20px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+      }
+    }
+
+    .right-side {
+      position: relative;
+      left: 20rem;
+
+      .btn {
+        img {
+          margin-left: 12px;
+          vertical-align: middle;
+        }
+      }
+    }
+  }
+}
+
+// =====================MEDIA QUERIES(MEDIUM DEVICE)=========================
+@media screen and (max-width: 1024px) {
+  header {
+    height: 100vh;
+
+    .container {
+      grid-template-columns: 1fr;
+      grid-template-rows: repeat(2, 1fr);
+
+      .left-side {
+        display: grid;
+        justify-content: center;
+        align-items: center;
+        position: relative;
+        right: 11rem;
+
+        p {
+          font-size: 1.8rem;
+        }
+      }
+
+      .right-side {
+        position: relative;
+        left: -7rem;
+        top: 7rem;
+      }
+    }
+  }
+}
+
+// =====================MEDIA QUERIES(MEDIUM DEVICE)=========================
+@media screen and (max-width: 600px) {
+  header {
+    height: 100vh;
+    padding-top: 3rem;
+
+    .container {
+      .left-side {
+        display: grid;
+        // justify-content: center;
+        // align-items: center;
+        position: relative;
+        right: 3rem;
+
+        h1 {
+          font-size: 3.5rem;
+        }
+
+        p {
+          font-size: 1.2rem;
+        }
+      }
+
+      .right-side {
+        position: relative;
+        left: 0rem;
+        top: 5rem;
+      }
+    }
+  }
+}
